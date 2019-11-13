@@ -1,9 +1,9 @@
 <?php
 // AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 $boomer = $argv[1];
-var_dump($boomer);
-$largeMilkshake = intval(floor($boomer));
-$smolMilkshake = intval(round(($boomer - $largeMilkshake) * 100));
+$okboomer = round(($boomer * 100) / 5) * 5 / 100;
+$largeMilkshake = intval(floor($okboomer));
+$smolMilkshake = intval(round(($okboomer - $largeMilkshake) * 100));
 
 // Constantinopel Arrayicuz
 $boi = array(
@@ -20,9 +20,9 @@ $boi = array(
 
 // Honey loops met 4 granen en honing
 foreach ($boi as $yeet) {
-    if ($boomer >= $yeet) {
-        $moneh = floor($boomer / $yeet);
-        $boomer %= $yeet;
+    if ($okboomer >= $yeet) {
+        $moneh = floor($okboomer / $yeet);
+        $okboomer %= $yeet;
         echo "$moneh x €$yeet euro" . PHP_EOL;
     }
 };
@@ -33,8 +33,6 @@ $gorl = array(
     20,
     10,
     5,
-    2,
-    1,
 );
 
 // Kinecct
